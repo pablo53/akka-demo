@@ -9,6 +9,9 @@ class MyFirstActor(context: ActorContext[String]) extends AbstractBehavior[Strin
     case "hello" =>
       println("Hello World!")
       this
+    case "stop" =>
+      println("Stopping actor...")
+      Behaviors.stopped
     case txt: String =>
       println(s"Received: '$txt'")
       this

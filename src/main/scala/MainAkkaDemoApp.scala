@@ -11,6 +11,8 @@ object MainAkkaDemoApp {
       "myFirstActorSystem"
     )
     actorSystem ! "hello"
+    actorSystem ! "what's up?"
+    actorSystem ! "stop"
   }
 
 }
